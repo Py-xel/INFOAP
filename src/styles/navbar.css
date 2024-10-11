@@ -1,0 +1,55 @@
+/* Navbar container */
+.navbar {
+  display: flex;
+  align-items: center;
+  background-color: #333;
+  color: white;
+  padding: 10px 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+/* Logo */
+.navbar .logo {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+/* Navigation links */
+.navbar .nav-items {
+  display: flex;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  padding: 8px 12px;
+  transition: all 0.3s ease;
+}
+
+.navbar a:hover {
+  background-color: #555;
+}
+
+/* Dropdown menu */
+.navbar .dropdown {
+  position: relative;
+}
+
+.navbar .dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #333;
+  min-width: 160px;
+  z-index: 1;
+}
+
+.navbar .dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.navbar .dropdown-content a {
+  color: white;
+  padding: 8px 12px;
+}
