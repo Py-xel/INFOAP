@@ -7,8 +7,8 @@ import Form from './routes/Form';
 import NotFound from './components/error/NotFound';
 
 export const router = createBrowserRouter([
-  { path: '/', element: <Home /> },
-  { path: '/contact', element: <Contact /> },
-  { path: '/form', element: <Form /> },
+  { path: '/INFOAP/', element: <Home /> },
+  { path: '/INFOAP/contact', element: <Contact /> },
+  { path: '/INFOAP/form', element: <Form /> },
   { path: '*', element: <NotFound /> },
 ]);
