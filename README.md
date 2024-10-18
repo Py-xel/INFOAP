@@ -6,12 +6,14 @@ This repository was made for a Home Project as part of the INFO-AP course at Gá
 
 #### Technologies used
 
-- Framework: **React**
-- Routing: **React-Router**
-- Stylesheets: **Sass**
-- Animations: **Framer Motion**
-- Map: **Leaflet**
-- Assets: **Photoshop**
+|    <!--  -->    |     <!--  -->     |
+| :-------------: | :---------------: |
+|  **Framework**  |     **React**     |
+|   **Routing**   | **React-Router**  |
+| **Stylesheets** |     **Sass**      |
+| **Animations**  | **Framer Motion** |
+|     **Map**     |    **Leaflet**    |
+|   **Assets**    |   **Photoshop**   |
 
 #### Support
 
