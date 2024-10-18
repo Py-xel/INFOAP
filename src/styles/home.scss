@@ -1,0 +1,112 @@
+$font_family: Figtree;
+$highlight_color: #ff8800;
+$background_color: #262238;
+
+.video-container {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+
+  .hero_video {
+    width: 100vw;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+  }
+
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba($background_color, 0.8);
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: $font_family;
+
+    .text-container {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      width: 100%;
+      max-width: 1000px;
+      margin-left: 20px;
+
+      h1 {
+        font-size: 75px;
+        text-transform: uppercase;
+        color: white;
+        margin: 0;
+        padding: 0;
+      }
+
+      p {
+        color: white;
+        font-size: 25px;
+        margin-bottom: 20px;
+        margin-top: 10px;
+      }
+
+      .highlight {
+        font-size: 75px;
+        color: $highlight_color;
+      }
+
+      .animated-button {
+        position: relative;
+        font-family: $font_family;
+        font-size: 20px;
+        padding: 18px 40px;
+        margin-top: 12px;
+        height: 3rem;
+        background-color: $highlight_color;
+        color: white;
+        border: none;
+        cursor: pointer;
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: transform 0.2s ease-in-out;
+        text-decoration: none;
+
+        .button-text {
+          transition: transform 0.5s ease;
+          position: relative;
+          z-index: 1;
+          width: 100%;
+        }
+
+        .arrow {
+          position: absolute;
+          left: -40px;
+          opacity: 0;
+          transition: left 0.5s ease, opacity 0.5s ease;
+          font-size: 25px;
+        }
+        /* Hover animation */
+        &:hover {
+          transform: scale(1.05);
+        }
+        /* OnClick animation */
+        &:active {
+          transform: scale(0.9);
+        }
+        &:hover .button-text {
+          transform: translateX(150%);
+        }
+        &:hover .arrow {
+          left: calc(50% - 12px);
+          opacity: 1;
+        }
+      }
+    }
+  }
+}

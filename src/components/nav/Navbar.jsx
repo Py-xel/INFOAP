@@ -1,13 +1,20 @@
 import { Link } from 'react-router-dom';
 
-import '../../styles/navbar.css';
+/* STYLES */
+import '../../styles/navbar.scss';
 
 const Navbar = () => {
   return (
     <div className="navbar">
-      <Link to="/INFOAP/">Home</Link>
-      <Link to="/INFOAP/contact">Contact</Link>
-      <Link to="/INFOAP/form">Form</Link>
+      <a href="/">
+        <i className="fab fa-teamspeak" />
+        <span className="name">passion project</span>
+      </a>
+      <div className="links">
+        <Link to="/INFOAP/">Főoldal</Link>
+        <Link to="/INFOAP/contact">Kapcsolat</Link>
+        <Link to="/INFOAP/form">Csatlakozz</Link>
+      </div>
     </div>
   );
 };

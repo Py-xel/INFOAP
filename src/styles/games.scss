@@ -1,0 +1,62 @@
+$font_family: Figtree;
+$highlight_color: #ffbb00;
+$lowlight_color: #ffffff96;
+$background_color: #1b1f28;
+
+.games-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  max-width: 100vw;
+  height: 100vh;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-image: url('../assets/dark_souls_bg.png');
+
+  mask-image: linear-gradient(to bottom, rgba(27, 31, 40, 1) 90%, rgba(27, 31, 40, 0) 100%);
+  -webkit-mask-image: linear-gradient(to bottom, rgba(27, 31, 40, 1) 90%, rgba(27, 31, 40, 0) 100%);
+
+  overflow: hidden;
+}
+
+.games {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: stretch;
+  margin-top: 10%;
+  gap: 10%;
+}
+
+.games img {
+  width: 50%;
+  height: auto;
+  mask-image: linear-gradient(to bottom, rgba(27, 31, 40, 1) 90%, rgba(27, 31, 40, 0) 100%);
+  -webkit-mask-image: linear-gradient(to bottom, rgba(27, 31, 40, 1) 90%, rgba(27, 31, 40, 0) 100%);
+}
+
+.games-text-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 50%;
+  margin-right: 10%;
+  font-family: $font_family;
+}
+
+.games-text-container h1 {
+  color: white;
+  margin: 0;
+}
+
+.games-description {
+  color: $lowlight_color;
+  width: 100%;
+  text-wrap: wrap;
+  text-align: center;
+  margin-top: 30px;
+  font-size: 1.2em;
+}

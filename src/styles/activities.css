@@ -1,0 +1,65 @@
+.activities-container {
+  max-width: 100vw;
+  height: 400px;
+  background-color: #1b1f28;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.activities-container .activities {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 200px;
+  width: 1300px;
+  padding: 40px;
+  /* Icon properties */
+  font-family: Figtree;
+  color: #ffbb00;
+  font-size: 30px;
+}
+.activities-container .activities .activity-1,
+.activities-container .activities .activity-2,
+.activities-container .activities .activity-3,
+.activities-container .activities .activity-4 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 10px;
+  width: 240px;
+  /* title text */
+  /* description text */
+}
+.activities-container .activities .activity-1 .icon-container,
+.activities-container .activities .activity-2 .icon-container,
+.activities-container .activities .activity-3 .icon-container,
+.activities-container .activities .activity-4 .icon-container {
+  width: 80px;
+  height: 80px;
+  border: 4px solid #ffbb00;
+  background-color: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  margin-bottom: 5px;
+}
+.activities-container .activities .activity-1 h1,
+.activities-container .activities .activity-2 h1,
+.activities-container .activities .activity-3 h1,
+.activities-container .activities .activity-4 h1 {
+  text-align: center;
+  color: white;
+  font-size: 20px;
+  margin-top: 30px;
+  text-transform: uppercase;
+}
+.activities-container .activities .activity-1 span,
+.activities-container .activities .activity-2 span,
+.activities-container .activities .activity-3 span,
+.activities-container .activities .activity-4 span {
+  text-align: center;
+  color: rgba(255, 255, 255, 0.5882352941);
+  font-size: 14px;
+  margin: 0;
+}/*# sourceMappingURL=activities.css.map */

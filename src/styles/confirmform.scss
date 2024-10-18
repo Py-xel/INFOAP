@@ -1,0 +1,57 @@
+// Define your SCSS variables
+$font_family: 'Figtree', sans-serif;
+$text_color: #f5f5f5;
+$highlight_color: #ff8800;
+$background_color: #2c303a;
+$asterisk_color: #ff2e2e;
+
+body {
+  font-family: $font_family;
+  background-color: $background_color;
+  color: $text_color;
+}
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.7); // Slightly darker for better contrast
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal {
+  background: $background_color; // Use your background color
+  color: $text_color; // Use your text color
+  padding: 20px;
+  border: 2px solid $highlight_color;
+  border-radius: 5px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  width: 350px;
+}
+
+.modal h2 {
+  margin: 0 0 10px;
+}
+
+.modal button {
+  margin: 5px;
+  background-color: $highlight_color; // Button background color
+  color: $text_color; // Button text color
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+  border-radius: 5px;
+
+  &:hover {
+    opacity: 0.8; // Simple hover effect
+  }
+}
+
+.required-asterisk {
+  color: $asterisk_color; // Color for required asterisks
+}

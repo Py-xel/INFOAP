@@ -1,0 +1,35 @@
+.invite-container {
+  background-size: cover;
+  background-position: top;
+  background-repeat: no-repeat;
+  background-image: url("../assets/contact_bg.png");
+}
+
+.invite-text-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-family: Figtree;
+  padding: 0.7rem;
+  max-width: 100vw;
+}
+.invite-text-container h1 {
+  font-size: 40px;
+}
+.invite-text-container span {
+  font-size: 24px;
+  width: 50%;
+}
+.invite-text-container p {
+  font-size: 18px;
+  margin-bottom: 3.85%;
+}
+.invite-text-container .email {
+  color: white;
+  transition: all ease-in-out 0.3s;
+  text-decoration: underline;
+}
+.invite-text-container .email:hover {
+  color: #ff8800;
+}/*# sourceMappingURL=contact.css.map */
