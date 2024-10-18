@@ -13,7 +13,7 @@ const ConfirmForm = ({ isOpen, onConfirm, onCancel }) => {
       <div className="modal">
         <h2>Űrlap beküldése</h2>
         <p>Ezen űrlap beküldésével beleegyezel, hogy megosztod adataid a Passion Project csapatával.</p>
-        <Link to="/INFOAP/thankyou">
+        <Link to="/thankyou">
           <button onClick={onConfirm}>Igen</button>
         </Link>
         <button onClick={onCancel}>Mégsem</button>
