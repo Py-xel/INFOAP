@@ -85,7 +85,7 @@ const Home = () => {
                 A hobbi-ranjongók <span className="highlight">legnagyobb</span> központja
               </h1>
               <p>Csatlakozz Magyarország legkedveltebb hobbi-közösségéhez!</p>
-              <a className="animated-button" href="/INFOAP/Form">
+              <a className="animated-button" href="/INFOAP/form">
                 <span className="button-text">Csatlakozz most!</span>
                 <i className="fas fa-arrow-right arrow"></i>
               </a>
@@ -151,7 +151,7 @@ const Home = () => {
             <motion.h1 variants={topAnim} initial="hidden" whileInView={'visible'} viewport={{ once: true }}>
               Mire vársz, csatlakozz!
             </motion.h1>
-            <a className="animated-button" href="/INFOAP/Form">
+            <a className="animated-button" href="/INFOAP/form">
               <span className="button-text">Csatlakozz most!</span>
               <i className="fas fa-arrow-right arrow"></i>
             </a>
