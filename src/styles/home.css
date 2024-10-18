@@ -13,6 +13,8 @@
   top: 0;
   left: 0;
   z-index: 1;
+  mask-image: linear-gradient(to bottom, rgb(27, 31, 40) 90%, rgba(27, 31, 40, 0) 100%);
+  -webkit-mask-image: linear-gradient(to bottom, rgb(27, 31, 40) 90%, rgba(27, 31, 40, 0) 100%);
 }
 .video-container .overlay {
   position: absolute;

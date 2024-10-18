@@ -1,5 +1,7 @@
 import { ErrorBoundary } from 'react-error-boundary';
 import { motion } from 'framer-motion';
+import { Link } from 'react-router-dom';
+import { useEffect } from 'react';
 
 /* COMPONENTS */
 import Fallback from '../components/error/Fallback';
@@ -21,6 +23,9 @@ import '../styles/location.scss';
 import '../styles/join.scss';
 
 const Home = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0); // Scrolls to the top of the page
+  }, []);
   /* ANIMATIONS */
   const animation_delay = 0.2;
 
@@ -85,10 +90,10 @@ const Home = () => {
                 A hobbi-ranjongók <span className="highlight">legnagyobb</span> központja
               </h1>
               <p>Csatlakozz Magyarország legkedveltebb hobbi-közösségéhez!</p>
-              <a className="animated-button" href="/form">
+              <Link className="animated-button" to="/form">
                 <span className="button-text">Csatlakozz most!</span>
                 <i className="fas fa-arrow-right arrow"></i>
-              </a>
+              </Link>
             </div>
           </div>
         </div>
@@ -151,10 +156,10 @@ const Home = () => {
             <motion.h1 variants={topAnim} initial="hidden" whileInView={'visible'} viewport={{ once: true }}>
               Mire vársz, csatlakozz!
             </motion.h1>
-            <a className="animated-button" href="/form">
+            <Link className="animated-button" to="/form">
               <span className="button-text">Csatlakozz most!</span>
               <i className="fas fa-arrow-right arrow"></i>
-            </a>
+            </Link>
           </div>
         </div>
         <Footer />

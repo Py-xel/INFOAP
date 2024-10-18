@@ -1,6 +1,6 @@
 import { ErrorBoundary } from 'react-error-boundary';
 import { motion } from 'framer-motion';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 
 /* COMPONENTS */
 import Fallback from '../components/error/Fallback';
@@ -17,25 +17,31 @@ import leaves from '../assets/leaves.png';
 import '../styles/form.scss';
 
 const Form = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   const topAnim = {
-    hidden: { opacity: 0, y: -150 },
+    hidden: { opacity: 0, y: -50 },
     visible: {
       opacity: 1,
       y: 0,
       transition: {
         duration: 1.4,
         ease: 'easeInOut',
+        delay: 0.5,
       },
     },
   };
   const bottomAnim = {
-    hidden: { opacity: 0, y: 150 },
+    hidden: { opacity: 0, y: 50 },
     visible: {
       opacity: 1,
       y: 0,
       transition: {
         duration: 1.4,
         ease: 'easeInOut',
+        delay: 0.5,
       },
     },
   };
