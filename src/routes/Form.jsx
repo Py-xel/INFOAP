@@ -127,7 +127,6 @@ const Form = () => {
                 <option value="friends">Barátok</option>
                 <option value="internet">Internet</option>
                 <option value="advertising">Reklámok</option>
-                <option value="browsing">Böngészés</option>
                 <option value="misc">Egyéb</option>
               </select>
             </div>
