@@ -8,25 +8,25 @@
   max-height: 100vh;
   height: 100%;
 }
-.thankyou-container .text-container {
+.thankyou-container .thankyou-text-container {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  height: calc(100vh - 110px);
+  height: calc(100vh - 89px);
 }
-.thankyou-container .text-container .fa-heart {
+.thankyou-container .thankyou-text-container .fa-heart {
   padding-top: 5%;
   font-size: 70px;
   color: rgb(226, 52, 52);
 }
-.thankyou-container .text-container h1 {
+.thankyou-container .thankyou-text-container h1 {
   font-size: 60px;
 }
-.thankyou-container .text-container p {
+.thankyou-container .thankyou-text-container p {
   font-size: 32px;
 }
-.thankyou-container .text-container a {
+.thankyou-container .thankyou-text-container a {
   font-family: Figtree;
   margin-top: 10px;
   background-color: orange;
@@ -38,6 +38,6 @@
   font-size: 1rem;
   text-decoration: none;
 }
-.thankyou-container .text-container a:hover {
+.thankyou-container .thankyou-text-container a:hover {
   background-color: darkorange;
 }/*# sourceMappingURL=thankyou.css.map */

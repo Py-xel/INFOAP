@@ -23,7 +23,7 @@ const ThankYou = () => {
     <div className="thankyou-container">
       <Navbar />
       <motion.div className="thankyou-message" variants={topAnim} initial="hidden" whileInView={'visible'} viewport={{ once: true }}>
-        <div className="text-container">
+        <div className="thankyou-text-container">
           <i className="fa-solid fa-heart" />
           <h1>Köszönjük jelenetkezésed!</h1>
           <p>Jelentkezésedet megkaptuk és hamarosan értesíteni fogunk.</p>

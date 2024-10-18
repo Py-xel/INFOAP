@@ -10,12 +10,12 @@ $font-family: Figtree;
   max-height: 100vh;
   height: 100%;
 
-  .text-container {
+  .thankyou-text-container {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    height: calc(100vh - 110px);
+    height: calc(100vh - 89px);
     .fa-heart {
       padding-top: 5%;
       font-size: 70px;
